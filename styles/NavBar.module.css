@@ -53,13 +53,8 @@
 .menu_icon {
     display: none;
 }
-.login {
-        display: none;
-    }
+
 @media screen and (max-width: 960px) {
-    .login {
-        display: none;
-    }
     .NavbarItems {
         position: relative;
     }

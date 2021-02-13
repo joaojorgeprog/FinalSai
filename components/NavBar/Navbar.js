@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import { MenuItems } from "./MenuItems"
 import stylesT from "../../styles/Navbar.module.css"
-import { IconContext } from "react-icons";
 import { FaBeer, FaTimes, FaBars, FaReact} from "react-icons/fa";
 import { Button } from '../Button'
 
