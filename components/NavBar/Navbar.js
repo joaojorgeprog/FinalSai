@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { MenuItems } from "./MenuItems"
-import stylesT from "../../styles/Navbar.module.css"
-import { FaBeer, FaTimes, FaBars, FaReact} from "react-icons/fa";
+import stylesNav from '../../styles/Navbar.module.css'
+import { FaTimes, FaBars, FaReact} from "react-icons/fa";
 import { Button } from '../Button'
 
 class Navbar extends Component {
@@ -16,34 +16,30 @@ class Navbar extends Component {
 
     render() {
         return(
-            <nav className={stylesT.NavbarItems}>
-                <h1 className={stylesT.navbar_logo}>React<span>
+            <nav className={stylesNav.NavbarItems}>
+                <h1 className={stylesNav.navbar_logo}>React<span>
                     <FaReact />
                 </span></h1>
-                <div className={stylesT.menu_icon} onClick={this.handleClick}>
+                <div className={stylesNav.menu_icon} onClick={this.handleClick}>
                     
                     {this.state.clicked && 
-                        <span className={`${stylesT.fas} ${stylesT.fa_times}`}>
+                        <span className={`${stylesNav.fas} ${stylesNav.fa_times}`}>
                         <FaTimes />
                     </span>
                     }
                     {!this.state.clicked &&
-                        <span className={`${stylesT.fas} ${stylesT.fa_bars}`}>
+                        <span className={`${stylesNav.fas} ${stylesNav.fa_bars}`}>
                         <FaBars />
                         </span>
                     }
 
            </div>
-                <ul className={this.state.clicked ? `${stylesT.nav_menu} ${stylesT.active}` : `${stylesT.nav_menu}`}>
+                <ul className={this.state.clicked ? `${stylesNav.nav_menu} ${stylesNav.active}` : `${stylesNav.nav_menu}`}>
                {MenuItems.map((item, index) => {
-                    var str1 = "stylesT.";
-                    var str2 = `${item.cName}`;
-                    var res = str1.concat(str2);
-                    console.log(`resultado: ${res}`)
                     if(item.cName == 'nav_links'){
                         return(    
                             <li key={index}>
-                                <a className={stylesT.nav_links} href={item.url}>
+                                <a className={stylesNav.nav_links} href={item.url}>
                                 {item.title}
                                 </a>
                             </li>
@@ -51,7 +47,7 @@ class Navbar extends Component {
                     }else{
                         return(    
                             <li key={index}>
-                                <a className={stylesT.nav_links_mobile} href={item.url}>
+                                <a className={stylesNav.nav_links_mobile} href={item.url}>
                                 {item.title}
                                 </a>
                             </li>
