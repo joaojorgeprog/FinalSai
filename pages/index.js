@@ -13,7 +13,7 @@ export default function Home() {
       
     <div className={styles.container}>
       <Head>
-        <title>Nextjs | Next-Auth</title>
+        <title>Nextjsd | Next-Auth</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
