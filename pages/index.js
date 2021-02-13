@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Header from '../components/Header'
-import Nav from '../components/nav'
 import styles from '../styles/Home.module.css'
 import { useSession } from 'next-auth/client'
 

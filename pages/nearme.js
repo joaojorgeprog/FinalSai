@@ -1,6 +1,5 @@
 import Meta from '../components/Meta'
 import React, {useState, useEffect} from 'react'
-import Map from '../components/Map'
 
 function NearMe() {
     const [error, setError] = useState(null)
@@ -26,7 +25,6 @@ function NearMe() {
         <div>
             <Meta title='Near Me'/>
             <h1>Near Me</h1>
-            <Map />
         </div>
     )
 }

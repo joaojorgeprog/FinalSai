@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
+    "build": "next build",
     "build:css": "postcss styles/tailwind.css -o styles/main.css",
     "build:watch": "postcss styles/tailwind.css -o styles/main.css --watch",
     "prod:build": "NODE_ENV=production yarn run build:css && yarn run build"
@@ -25,14 +26,10 @@
     "google-map-react": "^2.1.9",
     "next": "^10.0.6",
     "next-auth": "^3.4.1",
-    "postcss": "^8.2.6",
-    "postcss-cli": "^8.3.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
     "react-google-maps": "^9.4.5",
-    "react-icons": "^4.2.0",
-    "rsuite": "^4.8.9",
-    "tailwindcss": "^2.0.3"
+    "react-icons": "^4.2.0"
   }
 }

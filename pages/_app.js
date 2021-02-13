@@ -1,10 +1,10 @@
 import { Provider } from 'next-auth/client'
-import Nav from '../components/nav'
-import '../styles/main.css'
+import '../styles/globals.css'
+import Navbar from "../components/NavBar/Navbar"
 function MyApp({ Component, pageProps }) {
   return (
     <Provider session={pageProps.session}>
-      <Nav />
+      <Navbar />
       <Component {...pageProps} />
     </Provider>
   )
