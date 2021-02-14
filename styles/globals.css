@@ -17,6 +17,7 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
+    
 }
 
 .btnNav:hover {
@@ -28,7 +29,7 @@ body {
 }
 
 .btn__primary {
-    background-color: #3acbf7;
+    background-color: #f73859;
     padding: 8px 20px;
     border-radius: 40px;
     outline: none;

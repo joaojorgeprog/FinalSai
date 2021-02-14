@@ -2,21 +2,28 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 import { useSession } from 'next-auth/client'
+import img from '../public/index.png'
+
 
 export default function Home() {
 
   const [session, loading] = useSession();
+  
+
 
   return (
     <>
-      
-    <div className={styles.container}>
-      <Head>
-        <title>Nextjsd | Next-Auth</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <div className={styles.container} style={{
+        backgroundImage: "url(" + `${require("../public/index.png")}` + ")",
+        width: "100%",
+        height: "100%",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+      }}>
+        
       <Header />
       <main className={styles.main}>
+
         <h1 className={styles.title}>{process.env.CI} in Next.js app using teste</h1>
         <div className={styles.user}>
           {loading && <div className={styles.title}>Loading...</div>}

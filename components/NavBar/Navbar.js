@@ -3,6 +3,7 @@ import { MenuItems } from "./MenuItems"
 import StylesNav from '../../styles/Nav.module.css'
 import { FaTimes, FaBars, FaReact} from "react-icons/fa";
 import { Button } from '../Button'
+import Link from 'next/link'
 
 class Navbar extends Component {
 
@@ -16,7 +17,11 @@ class Navbar extends Component {
 
     render() {
         return(
-            <nav className={StylesNav.NavbarItems}>
+            <nav className={StylesNav.NavbarItems} style={{
+                backgroundImage: "url(" + `${require("../../public/index.png")}` + ")",
+              
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover" }}>
                 <h1 className={StylesNav.navbar_logo}>React<span>
                     <FaReact />
                 </span></h1>
@@ -39,17 +44,21 @@ class Navbar extends Component {
                     if(item.cName == 'nav_links'){
                         return(    
                             <li key={index}>
-                                <a className={StylesNav.nav_links} href={item.url}>
+                                <Link href={item.url}>
+                                <a className={StylesNav.nav_links}>
                                 {item.title}
                                 </a>
+                                </Link>
                             </li>
                         )
                     }else{
                         return(    
                             <li key={index}>
-                                <a className={StylesNav.nav_links_mobile} href={item.url}>
+                                <Link href={item.url}>
+                                <a className={StylesNav.nav_links_mobile}>
                                 {item.title}
                                 </a>
+                                </Link>
                             </li>
                         )   
                     }
