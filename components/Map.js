@@ -24,7 +24,7 @@ class Map extends Component {
                 </div>
                 <div style={{ width: '80%' }}>
                     <GoogleMapReact
-                        bootstrapURLKeys={{ key: `${process.env.GOOGLE_KEY}`}}
+                        bootstrapURLKeys={{ key: `${process.env.NEXT_PUBLIC_GOOGLE_ID}`}}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                         options={{ styles: mapStyles }}
