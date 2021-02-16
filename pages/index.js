@@ -16,12 +16,10 @@ export default function Home() {
       <div className={styles.container} style={{
         backgroundImage: "url(" + `${require("../public/index.png")}` + ")",
         width: "100%",
-        height: "100%",
+        height: "auto",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
       }}>
-        
-      <Header />
       <main className={styles.main}>
 
         <h1 className={styles.title}>{process.env.CI} in Next.js app using teste</h1>

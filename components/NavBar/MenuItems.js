@@ -24,4 +24,27 @@ export const MenuItems = [
         url: '#',
         cName: 'nav_links_mobile'
     },
+    {
+        title: 'User',
+        url: '#',
+        cName: 'nav_links_mobile'
+    },
+]
+
+export const MenuUser = [
+    {
+        title: 'MyEvents',
+        url: '/myEvents',
+        cName: 'events'
+    },
+    {
+        title: 'Profile',
+        url: '/profile',
+        cName: 'profile'
+    },
+    {
+        title: 'Logout',
+        url: '/logout',
+        cName: 'logout'
+    },
 ]

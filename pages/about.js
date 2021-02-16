@@ -2,10 +2,10 @@ import Meta from '../components/Meta'
 
 function About() {
     return (
-        <div>
+        <main>
             <Meta title='About'/>
-            <h1>About</h1>
-        </div>
+            <h1>About Us</h1>
+        </main>
     )
 }
 

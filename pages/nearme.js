@@ -14,6 +14,7 @@ function NearMe() {
             function (position) {
                 setlatitude(position.coords.latitude);
                 setLongitude(position.coords.longitude);
+                console.log(`coordes: ${position.coords.longitude}`)
             },
             function (error) {
                 setError(`Error Code =  ${error.code}  - ${error.message}`);
@@ -25,7 +26,7 @@ function NearMe() {
     return (
         <div>
             <Meta title='Near Me'/>
-            <Map />
+            <Map latitude={latitude} longuitude={longitude}/>
         </div>
     )
 }

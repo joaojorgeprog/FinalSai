@@ -1,0 +1,37 @@
+.modal {
+    outline: none;
+  background: white;
+  font-size: 1.6rem;
+  width: 46rem;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 15;
+  min-height: 27rem;
+  will-change: auto;
+  transform: translate3d(0, 0, 0);
+}
+.numberWidth{
+    width: 18px;
+}
+.numberHeight{
+    width: 48px;
+}
+
+@media screen and (max-width: 960px) {
+    .modal {
+    width: 80%;
+    max-width: 80%;
+    margin-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 70%;
+  }
+  .numberWidth{
+    width: 28px;
+    }
+    .numberHeight{
+        width: 28px;
+    }
+}
